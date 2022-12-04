@@ -17,7 +17,7 @@ a {
 }
 #navbar {
     background: #333333;
-    color: #f4f4f4;
+    color: gray;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -100,6 +100,7 @@ a {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
+    text-align: center;
 }
 
 .py-1 {padding: 1.5rem 0;}
@@ -120,3 +121,82 @@ a {
     margin-bottom: 1rem;
     border-radius: 50%;
 }
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2.5rem;}
+.p-3 {padding: 3.5rem;}
+.bg-light {
+    background-color: #f4f4f4;
+    color: #333333;
+}
+.bg-dark {
+    background-color: #333333;
+    color: #f4f4f4;
+}
+.list li {
+    padding: 0.5rem;
+    border-bottom: #aaa dotted 1px;
+
+}
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+#project {
+    display: flex;
+}
+#project .project-img {
+    background: url("https://cdn1.dotesports.com/wp-content/uploads/2022/05/12065506/maxresdefault-12.jpg") no-repeat center center/cover;
+}
+#project div {
+    flex: 1;
+}
+
+.m-1 { margin: 1.5rem;}
+.m-2 { margin: 2.5rem;}
+.m-3 { margin: 3.5rem;}
+#images .items {
+    display:flex;
+    justify-content: space-between;
+}
+#images .items img{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+#contact {
+    display: flex;
+}
+#contact div {
+    flex: 1;
+}
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+#contact h3 {
+    margin-top: 3rem;
+
+}
+#main-footer {
+    display: flex;
+    height: 300px;
+}
+#navbar ul {
+    flex-direction: column;
+}
+#navbar ul li {
+    padding: 0.5rem;
+    border-bottom: #f4f4f4 1px dotted;
+}
+
+
