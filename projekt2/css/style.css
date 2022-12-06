@@ -191,12 +191,7 @@ a {
     display: flex;
     height: 300px;
 }
-#navbar ul {
-    flex-direction: column;
-}
-#navbar ul li {
-    padding: 0.5rem;
-    border-bottom: #f4f4f4 1px dotted;
-}
 
-
+#navbar #hambac {
+    display: none;
+}

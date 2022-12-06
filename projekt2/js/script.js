@@ -10,7 +10,9 @@ $('#navbar a, .btn').on('click', function (event) {
         )
     }
 })
-
+$('#navbar #hambac').click(function (){
+    $('#navbar ul').slideToggle("slow");
+    })
 
 
 // Navigation active state on scroll
