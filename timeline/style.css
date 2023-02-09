@@ -47,13 +47,17 @@ h1 {
     padding: 1rem;
     background: var(--secondary-color);
     transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
 }
 #timeline ul li:nth-child(odd) div {
     left: 40px;
+    transform:translate(200px,0)
 }
 
 #timeline ul li:nth-child(odd) div {
     left: -434px;
+    transform:translate(-200px, 0)
 }
 #timeline ul li::after {
     content: '';
