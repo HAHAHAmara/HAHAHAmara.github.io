@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Timeline</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1><i class="fas fa-brain"></i>PVA 2022/2023</h1>
+            <h3><i class="fas fa-user"></i>Marek Hegr</h3>
+        </div>
+    </header>
+    <section id="timeline">
+        <ul>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i>1. leden 2023</h3>
+                    <p>Začal nový rok.</p>
+                </div>
+            </li>
+            <li>
+                <h3><i class="fas fa-chevron-right"></i>3.ledna 2023</h3>
+                <p>Mám 18 let.</p>
+            </li>
+            <li>
+                <h3><i class="fas fa-chevron-right"></i>12. leden 2023</h3>
+                <p>Turnaj v šachách.</p>
+            </li>
+            <li>
+                <h3><i class="fas fa-chevron-right"></i>18. leden 2023</h3>
+                <p>Oslava mých narozenin.</p>
+            </li>
+            <li>
+                <h3><i class="fas fa-chevron-right"></i>21. leden 2023</h3>
+                <p>Šli jsme s kamarády do hospody.</p>
+            </li>
+            <li>
+                <h3><i class="fas fa-chevron-right"></i>30. leden 2023</h3>
+                <p>Odpadla nám hodina matematiky.</p>
+            </li>
+            <li>
+                <h3><i class="fas fa-chevron-right"></i>31. leden 2023</h3>
+                <p>Přišel mi balíček.</p>
+            </li>
+            <li>
+                <h3><i class="fas fa-chevron-right"></i>6. únor 2023</h3>
+                <p>Odjíždím na stáž do Irska.</p>
+            </li>
+            <li>
+                <h3><i class="fas fa-chevron-right"></i>7. února 2023</h3>
+                <p>Dorazil jsem k rodině, u které budu bydlet.</p>
+            </li>
+            <li>
+                <h3><i class="fas fa-chevron-right"></i>9. února 2023</h3>
+                <p>První den v nové práci.</p>
+            </li>
+            <li>
+                <h3><i class="fas fa-chevron-right"></i>16. února 2023</h3>
+                <p>Jsem na cestě domů.</p>
+            </li>
+        </ul>
+    </section>
+    <script>const items = document.querySelectorAll("#timeline li");
+
+    const isInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+    const run = () =>
+        items.forEach((item) => {
+            if (isInViewport(item)) {
+                item.classList.add("show");
+            }
+        });
+
+    // Events
+    window.addEventListener("load", run);
+    window.addEventListener("resize", run);
+    window.addEventListener("scroll", run);
+    </script>
+</body>
+</html>
